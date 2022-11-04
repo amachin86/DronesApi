@@ -106,13 +106,12 @@ Password **admin**
 
 Note: the ContentType is application/json
 
-[![basic-auth.png](D:\Musala Imagenes\register1.png)](https://postimg.cc/RWCzL1YJ)
+[![basic-auth.png](D:\Musala Imagenes\register1.png)]
 
-----
-- **Registering a drone** localhost:8090/api/drone/register
+**Registering a drone** localhost:8090/apidrone/register
 The payload should be in json format like this
 
-[![reg-drone-payload.png](D:\Musala Imagenes\json.png)](https://postimg.cc/RN6P5Wnp)
+[![](D:\Musala Imagenes\register.png)]
 
 The response should be 
 
@@ -124,14 +123,14 @@ The response should be
 
 Before loading a drone with Medication you can first check the available drones to confirm that the drone is not in use
 
-**localhost:8090/api/drone/available**
+**localhost:8090/apidrone/available**
 
 [![available.png](D:\Musala Imagenes\available.png)]
 
 ---
 - **Loading a drone with medication items;** 
  
-**localhost:8090/api/drone/load**
+**localhost:8090/apidrone/load**
 
 The payload will have the following fields
 
@@ -146,35 +145,33 @@ the destination and the source are any places
 
  - The serialNumber is the unique serialNumber a drone that you register
 
-[![](D:\Musala Imagenes\json.png)
+[![](D:\Musala Imagenes\load.png)
 
----
+--- 
 - **Checking loaded medication items for a given drone;**
 
-**localhost:8090/api/drone/details/Q23RT5676695**
+**localhost:8090/apidrone/details/QR345K89789**
 
 - Check which medication item is loaded to a specific drone.
 
-[![details.png](https://i.postimg.cc/T1xgTpBN/details.png)](https://postimg.cc/9RxrpFmy)
+[![](D:\Musala Imagenes\details.png)
 
 ---
 
 - **Check drone battery level for a given drone;**
 
-**localhost:8090/api/drone/battery**
+**localhost:8090/apidrone/battery**
 
-[![battery.png](https://i.postimg.cc/25v13CQs/battery.png)](https://postimg.cc/DWvvMkY6)
+[![](D:\Musala Imagenes\battery.png)
 
 ---
 - **Delivery of medication item**
 
-**localhost:8090/api/drone/deliver**
+**localhost:8090/apidrone/deliver**
 
 When the drone delivers the item it call this end-point and its status is change drop loaded to delivering then delivered
 
-[![deliver.png](https://i.postimg.cc/9FRCcJtS/deliver.png)](https://postimg.cc/KR2dN7Wr)
-
-
+[![deliver.png]
 
 ---
 

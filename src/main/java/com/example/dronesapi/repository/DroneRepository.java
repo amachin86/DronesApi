@@ -19,7 +19,7 @@ public interface DroneRepository extends JpaRepository<Drone, String> {
 
     List<Drone> findAllByState(@Param("drone_state") String state); // using method
 
-    @Query(value = "SELECT e from Drone e where e.serialNumber =:id ", nativeQuery = true) // using @query with native
+    @Query(value = "SELECT e from Drone e where e.serialNumber =:id ") // using @query with native
     Drone findBySerialNumber(@Param("id") String id);
 
     @Modifying

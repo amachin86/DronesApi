@@ -115,6 +115,8 @@ public class DroneSeriviceImpl implements DroneService {
         Medication medication = medicationRepository.findByCode(loadRequest.getCode());
         LoadMedication checkLoad = loadDroneRepository.findByCode(loadRequest.getCode());
 
+        System.out.println("Este es el drone: " + drone.getSerialNumber());
+
         if(checkLoad != null) {
             throw new RuntimeException("Medication code has aready been loaded, try another one");
 
