@@ -81,8 +81,6 @@ While implementing your solution **please take care of the following requirement
 
 - Clone the from the link git clone https://github.com/amachin86/DronesApi
 
-[![clone.png](https://i.postimg.cc/WbVX1KTf/clone.png)](https://postimg.cc/G9MkMXBk)
-
 - Open the cloned project in IntelliJ
 
 - Go to maven the update Project to update all the maven dependencies
