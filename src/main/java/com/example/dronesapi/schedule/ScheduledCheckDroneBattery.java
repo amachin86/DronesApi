@@ -17,7 +17,7 @@ import com.example.dronesapi.dao.Drone;
 
 
 //The application class defines the scanned package
-@SpringBootApplication(scanBasePackages = "com.example.dronesapi")
+@SpringBootApplication(scanBasePackages = { "com.example.dronesapi", "com.example.dronesapi"})
 @EnableScheduling
 @EnableAsync
 
