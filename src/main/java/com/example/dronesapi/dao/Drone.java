@@ -12,24 +12,11 @@ import javax.persistence.Table;
 @Table(name = "tbl_drone")
 public class Drone {
 
-    public Drone() {
-
-    }
-
-    public Drone(String serialNumber, String model, double weightLimit, BigDecimal battery, String state) {
-        super();
-        this.serialNumber = serialNumber;
-        this.model = model;
-        this.weightLimit = weightLimit;
-        this.battery = battery;
-        this.state = state;
-    }
-
     @Id
     @Column(name = "serial_no", columnDefinition = "VARCHAR(16) NOT NULL")
     private String serialNumber;
 
-    @Column(name = "model", columnDefinition = "VARCHAR(50) NOT NULL") // Lightweight, Middleweight, Cruiserweight,
+    @Column(name = "model", columnDefinition = "VARCHAR(50) NOT NULL") // Lightweight, Middleweight, Cruiserweight, Heavyweight
     private String model;
 
     @Column(name = "weight_limit", columnDefinition = "VARCHAR(10) NOT NULL")
@@ -43,8 +30,18 @@ public class Drone {
 
 
 
-    //@OneToOne(mappedBy = "drone")
-    //private LoadMedication loadMedication;
+    public Drone() {
+
+    }
+
+    public Drone(String serialNumber, String model, double weightLimit, BigDecimal battery, String state) {
+        super();
+        this.serialNumber = serialNumber;
+        this.model = model;
+        this.weightLimit = weightLimit;
+        this.battery = battery;
+        this.state = state;
+    }
 
     public String getSerialNumber() {
         return serialNumber;

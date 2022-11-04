@@ -116,7 +116,7 @@ The payload should be in json format like this
 
 The response should be 
 
-[![reg-drone-response.png](https://i.postimg.cc/G20fRxKF/reg-drone-response.png)](https://postimg.cc/bGTgHbKr)
+[![](D:\Musala Imagenes\repuesta.png)
 
 ---
 - **Checking available drones for loading;**
@@ -126,7 +126,7 @@ Before loading a drone with Medication you can first check the available drones 
 
 **localhost:8090/api/drone/available**
 
-[![available.png](D:\Musala Imagenes\available.png)](https://postimg.cc/DmD9XkrD)
+[![available.png](D:\Musala Imagenes\available.png)]
 
 ---
 - **Loading a drone with medication items;** 
@@ -140,13 +140,13 @@ The payload will have the following fields
 - source is the loading point
 - destination is where the load is being taken
 
-the Medication items to be loaded for testing are code : **WE232344, WE232345, WE232346, WE232347, WE232348, WE232349, WE2323510, WE2323511, WE2323512, WE2323513**
+the Medication items to be loaded for testing are code : **ME2902344, ME2892345, ME9864347, ME2323900**
 
 the destination and the source are any places
 
  - The serialNumber is the unique serialNumber a drone that you register
 
-[![load-drone.png](https://i.postimg.cc/YSNPpmsT/load-drone.png)](https://postimg.cc/94MbbzVB)
+[![](D:\Musala Imagenes\json.png)
 
 ---
 - **Checking loaded medication items for a given drone;**

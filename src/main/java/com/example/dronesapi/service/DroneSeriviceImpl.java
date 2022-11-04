@@ -99,26 +99,16 @@ public class DroneSeriviceImpl implements DroneService {
     @Override
     public LoadDroneResponse loadDrone(LoadDroneRequest loadRequest) {
         //preload data
-        Medication medication1 = new Medication("WE232344","Covax",100,"image1");
-        Medication medication2 = new Medication("WE232345","Meloxicam",150,"image2");
-        Medication medication3 = new Medication("WE232346","Metformin",200,"image14");
-        Medication medication4 = new Medication("WE232347","Acetaminophen",300,"image1854");
-        Medication medication5 = new Medication("WE232348","Amoxicillin",400,"image190");
-        Medication medication6 = new Medication("WE232349","Ativan",260,"image144");
-        Medication medication7 = new Medication("WE2323510","Atorvastatin",180,"image19848");
-        Medication medication8 = new Medication("WE2323511","Azithromycin",400,"image1090");
-        Medication medication9 = new Medication("WE2323512","Zyloprim",400,"image1o0999");
-        Medication medication10 = new Medication("WE2323513","Diprolene ",400,"image19383");
+        Medication medication1 = new Medication("ME2902344","Cough drops",100,"image1");
+        Medication medication2 = new Medication("ME2892345","Meloxicam",150,"image2");
+        Medication medication3 = new Medication("ME2323900","Metformin",200,"image14");
+        Medication medication4 = new Medication("ME9864347","Painkillers",300,"image1854");
+
         medicationRepository.save(medication1);
         medicationRepository.save(medication2);
         medicationRepository.save(medication3);
         medicationRepository.save(medication4);
-        medicationRepository.save(medication5);
-        medicationRepository.save(medication6);
-        medicationRepository.save(medication7);
-        medicationRepository.save(medication8);
-        medicationRepository.save(medication9);
-        medicationRepository.save(medication10);
+
 
         droneRepository.setUpdateState("LOADING", loadRequest.getSerialNumber());
         Drone drone = droneRepository.findBySerialNumber(loadRequest.getSerialNumber());
@@ -190,26 +180,16 @@ public class DroneSeriviceImpl implements DroneService {
     }
     @Override
     public void preLoadData() {
-        Medication medication1 = new Medication("WE232344","Covax",100,"image1");
-        Medication medication2 = new Medication("WE232345","Meloxicam",150,"image2");
-        Medication medication3 = new Medication("WE232346","Metformin",200,"image14");
-        Medication medication4 = new Medication("WE232347","Acetaminophen",300,"image1854");
-        Medication medication5 = new Medication("WE232348","Amoxicillin",400,"image190");
-        Medication medication6 = new Medication("WE232349","Ativan",260,"image144");
-        Medication medication7 = new Medication("WE2323510","Atorvastatin",180,"image19848");
-        Medication medication8 = new Medication("WE2323511","Azithromycin",400,"image1090");
-        Medication medication9 = new Medication("WE2323512","Zyloprim",400,"image1o0999");
-        Medication medication10 = new Medication("WE2323513","Diprolene ",400,"image19383");
+        Medication medication1 = new Medication("ME2902344","Cough drops",100,"image1");
+        Medication medication2 = new Medication("ME2892345","Meloxicam",150,"image2");
+        Medication medication3 = new Medication("ME2323900","Metformin",200,"image14");
+        Medication medication4 = new Medication("ME9864347","Painkillers",300,"image1854");
+
         medicationRepository.save(medication1);
         medicationRepository.save(medication2);
         medicationRepository.save(medication3);
         medicationRepository.save(medication4);
-        medicationRepository.save(medication5);
-        medicationRepository.save(medication6);
-        medicationRepository.save(medication7);
-        medicationRepository.save(medication8);
-        medicationRepository.save(medication9);
-        medicationRepository.save(medication10);
+
 
     }
 }
