@@ -73,7 +73,7 @@ While implementing your solution **please take care of the following requirement
 #### Requirements
 
 - Java 8
-- Java IDE (Eclipse)
+- Java IDE (IntelliJ IDEA)
 - MYSQL databse (Optional you can use in-memory databse)
 - Postman(For testing ) 
 
@@ -83,7 +83,7 @@ While implementing your solution **please take care of the following requirement
 
 [![clone.png](https://i.postimg.cc/WbVX1KTf/clone.png)](https://postimg.cc/G9MkMXBk)
 
-- Open the cloned project in eclipse
+- Open the cloned project in IntelliJ
 
 - Go to maven the update Project to update all the maven dependencies
 
@@ -111,7 +111,7 @@ Note: the ContentType is application/json
 [![basic-auth.png](https://i.postimg.cc/XYd73QcL/basic-auth.png)](https://postimg.cc/RWCzL1YJ)
 
 ----
-- **Registering a drone** localhost:8082/api/drone/register
+- **Registering a drone** localhost:8090/api/drone/register
 The payload should be in json format like this
 
 [![reg-drone-payload.png](https://i.postimg.cc/SNVH98Q4/reg-drone-payload.png)](https://postimg.cc/RN6P5Wnp)
@@ -126,14 +126,14 @@ The response should be
 
 Before loading a drone with Medication you can first check the available drones to confirm that the drone is not in use
 
-**localhost:8082/api/drone/available**
+**localhost:8090/api/drone/available**
 
 [![available.png](https://i.postimg.cc/m22BKTtb/available.png)](https://postimg.cc/DmD9XkrD)
 
 ---
 - **Loading a drone with medication items;** 
  
-**localhost:8082/api/drone/load**
+**localhost:8090/api/drone/load**
 
 The payload will have the following fields
 
@@ -153,7 +153,7 @@ the destination and the source are any places
 ---
 - **Checking loaded medication items for a given drone;**
 
-**localhost:8082/api/drone/details/Q23RT5676695**
+**localhost:8090/api/drone/details/Q23RT5676695**
 
 - Check which medication item is loaded to a specific drone.
 
@@ -163,14 +163,14 @@ the destination and the source are any places
 
 - **Check drone battery level for a given drone;**
 
-**localhost:8082/api/drone/battery**
+**localhost:8090/api/drone/battery**
 
 [![battery.png](https://i.postimg.cc/25v13CQs/battery.png)](https://postimg.cc/DWvvMkY6)
 
 ---
 - **Delivery of medication item**
 
-**localhost:8082/api/drone/deliver**
+**localhost:8090/api/drone/deliver**
 
 When the drone delivers the item it call this end-point and its status is change drop loaded to delivering then delivered
 
