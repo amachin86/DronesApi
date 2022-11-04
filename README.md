@@ -72,14 +72,14 @@ While implementing your solution **please take care of the following requirement
 
 #### Requirements
 
-- Java 8
+- Java 11
 - Java IDE (IntelliJ IDEA)
 - MYSQL databse (Optional you can use in-memory databse)
 - Postman(For testing ) 
-
+ 
 ### Steps by step for building and runing the project locally
 
-- Clone the from the link git clone https://oauth:glpat-KxCBHW2ez2iw-xhJ3D2K@gitlab.com/musala-coding-tasks-solutions/moses-kipyegon.git
+- Clone the from the link git clone https://github.com/amachin86/DronesApi
 
 [![clone.png](https://i.postimg.cc/WbVX1KTf/clone.png)](https://postimg.cc/G9MkMXBk)
 
