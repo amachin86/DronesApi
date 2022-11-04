@@ -15,7 +15,7 @@ import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 
 @RestController
-@RequestMapping(path="/api/drone")
+@RequestMapping(path="/apidrone")
 @Validated
 public class DroneController {
     @Autowired
