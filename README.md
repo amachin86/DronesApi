@@ -106,13 +106,13 @@ Password **admin**
 
 Note: the ContentType is application/json
 
-[![basic-auth.png](https://i.postimg.cc/XYd73QcL/basic-auth.png)](https://postimg.cc/RWCzL1YJ)
+[![basic-auth.png](D:\Musala Imagenes\register1.png)](https://postimg.cc/RWCzL1YJ)
 
 ----
 - **Registering a drone** localhost:8090/api/drone/register
 The payload should be in json format like this
 
-[![reg-drone-payload.png](https://i.postimg.cc/SNVH98Q4/reg-drone-payload.png)](https://postimg.cc/RN6P5Wnp)
+[![reg-drone-payload.png](D:\Musala Imagenes\json.png)](https://postimg.cc/RN6P5Wnp)
 
 The response should be 
 
@@ -126,7 +126,7 @@ Before loading a drone with Medication you can first check the available drones 
 
 **localhost:8090/api/drone/available**
 
-[![available.png](https://i.postimg.cc/m22BKTtb/available.png)](https://postimg.cc/DmD9XkrD)
+[![available.png](D:\Musala Imagenes\available.png)](https://postimg.cc/DmD9XkrD)
 
 ---
 - **Loading a drone with medication items;** 
