@@ -1,22 +1,22 @@
 package com.example.dronesapi.controller;
 
-
-import com.example.dronesapi.dto.response.RegisterDroneResponse;
-import com.example.dronesapi.service.DroneSeriviceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.*;
 
 import com.example.dronesapi.dto.request.*;
 import com.example.dronesapi.dto.response.*;
+import com.example.dronesapi.dto.response.RegisterDroneResponse;
+import com.example.dronesapi.service.DroneSeriviceImpl;
 
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 
+@RestController
+@RequestMapping(path="/api/drone")
+@Validated
 public class DroneController {
     @Autowired
     private DroneSeriviceImpl droneService;
