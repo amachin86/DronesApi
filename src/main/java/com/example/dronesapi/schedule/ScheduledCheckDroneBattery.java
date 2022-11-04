@@ -7,6 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
@@ -15,9 +16,11 @@ import com.example.dronesapi.repository.DroneRepository;
 import com.example.dronesapi.dao.Drone;
 
 
-@SpringBootApplication
+//The application class defines the scanned package
+@SpringBootApplication(scanBasePackages = "com.example.dronesapi")
 @EnableScheduling
 @EnableAsync
+
 public class ScheduledCheckDroneBattery {
 
     @Autowired

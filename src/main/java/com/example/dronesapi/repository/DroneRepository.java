@@ -11,8 +11,10 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
 import com.example.dronesapi.dao.Drone;
+import org.springframework.stereotype.Component;
 
 @Transactional
+@Component
 public interface DroneRepository extends JpaRepository<Drone, String> {
 
     List<Drone> findAllByState(@Param("drone_state") String state); // using method
