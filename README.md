@@ -145,7 +145,7 @@ the destination and the source are any places
 
  - The serialNumber is the unique serialNumber a drone that you register
 
-[![D:\Musala Imagenes\load.png](D:\Musala Imagenes\load.png)
+[![D:\Musala Imagenes\load.png](https://github.com/amachin86/DronesApi/blob/master/src/main/resources/assert/load.png)
 
 --- 
 - **Checking loaded medication items for a given drone;**
@@ -154,7 +154,7 @@ the destination and the source are any places
 
 - Check which medication item is loaded to a specific drone.
 
-[![D:\Musala Imagenes\details.png](D:\Musala Imagenes\details.png)
+[![D:\Musala Imagenes\details.png](https://github.com/amachin86/DronesApi/blob/master/src/main/resources/assert/details.png)
 
 ---
 
@@ -162,7 +162,7 @@ the destination and the source are any places
 
 **localhost:8090/apidrone/battery**
 
-[![D:\Musala Imagenes\battery.png](D:\Musala Imagenes\battery.png)
+[![D:\Musala Imagenes\battery.png](https://github.com/amachin86/DronesApi/blob/master/src/main/resources/assert/battery.png)
 
 ---
 - **Delivery of medication item**
@@ -171,7 +171,7 @@ the destination and the source are any places
 
 When the drone delivers the item it call this end-point and its status is change drop loaded to delivering then delivered
 
-[![D:\Musala Imagenes\deliver.png](D:\Musala Imagenes\deliver.png)
+[![D:\Musala Imagenes\deliver.png](https://github.com/amachin86/DronesApi/blob/master/src/main/resources/assert/deliver.png)
 
 ---
 
