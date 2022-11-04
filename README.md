@@ -106,16 +106,16 @@ Password **admin**
 
 Note: the ContentType is application/json
 
-[![D:\Musala Imagenes\register1.png](D:\Musala Imagenes\register1.png)]
+[![D:\Musala Imagenes\register1.png](https://github.com/amachin86/DronesApi/blob/master/src/main/resources/assert/register1.png)]
 
 **Registering a drone** localhost:8090/apidrone/register
 The payload should be in json format like this
 
-[![D:\Musala Imagenes\register.png)](D:\Musala Imagenes\register.png)]
+[![D:\Musala Imagenes\register.png)](https://github.com/amachin86/DronesApi/blob/master/src/main/resources/assert/register.png)]
 
 The response should be 
 
-[![D:\Musala Imagenes\repuesta.png](D:\Musala Imagenes\repuesta.png)
+[![D:\Musala Imagenes\repuesta.png](https://github.com/amachin86/DronesApi/blob/master/src/main/resources/assert/repuesta.png)
 
 ---
 - **Checking available drones for loading;**
@@ -125,7 +125,7 @@ Before loading a drone with Medication you can first check the available drones 
 
 **localhost:8090/apidrone/available**
 
-[![available.png](D:\Musala Imagenes\available.png)]
+[![available.png](https://github.com/amachin86/DronesApi/blob/master/src/main/resources/assert/available.png)]
 
 ---
 - **Loading a drone with medication items;** 
